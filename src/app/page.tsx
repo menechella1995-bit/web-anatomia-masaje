@@ -121,10 +121,10 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {muscles.map((muscle) => (
+            {muscles.slice(0, 3).map((muscle) => (
               <MuscleCard key={muscle.id} muscle={muscle} />
             ))}
-            {bones.map((bone) => (
+            {bones.slice(0, 3).map((bone) => (
               <BoneCard key={bone.id} bone={bone} />
             ))}
           </div>
