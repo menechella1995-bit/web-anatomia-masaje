@@ -1,5 +1,6 @@
 import { Movement } from "@/data/anatomyData";
 import { Activity, Target } from "lucide-react";
+import Image from "next/image";
 
 interface MovementCardProps {
   movement: Movement;
@@ -9,12 +10,14 @@ export default function MovementCard({ movement }: MovementCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg border border-emerald-50 overflow-hidden hover:shadow-xl transition-all group flex flex-col md:flex-row">
       {movement.imageUrl && (
-        <div className="md:w-1/3 h-48 md:h-auto relative overflow-hidden bg-emerald-100">
-          <img 
+        <div className="md:w-1/3 h-48 md:h-auto relative overflow-hidden bg-emerald-100 min-h-[200px]">
+          <Image 
             src={movement.imageUrl} 
             alt={movement.name} 
-            crossOrigin="anonymous"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            unoptimized={false}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 to-transparent" />
         </div>
