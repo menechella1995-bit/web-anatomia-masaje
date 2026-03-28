@@ -12,12 +12,12 @@ export default function BoneCard({ bone }: BoneCardProps) {
       {bone.imageUrl && (
         <div className="md:w-1/3 h-48 md:h-auto relative overflow-hidden bg-emerald-100 min-h-[200px]">
           <Image 
-            src={bone.imageUrl} 
+            src={`/api/proxy-image?url=${encodeURIComponent(bone.imageUrl)}`} 
             alt={bone.name} 
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-500"
-            unoptimized={false}
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 to-transparent" />
         </div>
