@@ -450,6 +450,26 @@ export const muscles: Muscle[] = [
     massageTechnique: "Amasamiento longitudinal del borde radial del antebrazo."
   },
   {
+    id: "forearm-flexors",
+    name: "Flexores del antebrazo",
+    location: "Antebrazo (cara anterior)",
+    action: "Flexión de muñeca y dedos",
+    origin: "Epicóndilo medial del húmero",
+    insertion: "Huesos del carpo, metacarpo y falanges",
+    innervation: "Nervios mediano y cubital",
+    massageTechnique: "Amasamiento profundo y estiramientos de la musculatura flexora."
+  },
+  {
+    id: "forearm-extensors",
+    name: "Extensores del antebrazo",
+    location: "Antebrazo (cara posterior)",
+    action: "Extensión de muñeca y dedos",
+    origin: "Epicóndilo lateral del húmero",
+    insertion: "Huesos del carpo, metacarpo y falanges",
+    innervation: "Nervio radial",
+    massageTechnique: "Fricciones longitudinales sobre la musculatura extensora."
+  },
+  {
     id: "gastrocnemius",
     name: "Gastrocnemio (Gemelos)",
     latinName: "Musculus gastrocnemius",
