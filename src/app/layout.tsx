@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Video Edit Pro | Servicios Profesionales de Edición",
-  description: "Servicios profesionales de edición de video. Sube tus clips y recibe un video editado de alta calidad.",
+  title: "Anatomía y Masaje Pro | Educación Profesional",
+  description: "Plataforma educativa profesional sobre anatomía humana, fisiología muscular y técnicas de masaje.",
 };
 
 export default function RootLayout({
